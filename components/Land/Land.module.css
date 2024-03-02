@@ -1,0 +1,54 @@
+.landing {
+    background-image: url(/land.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 53.64px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inttext {
+    margin-left: 100px;
+    width: 600px;
+    height: 320px;
+}
+
+.prag , .span{
+    font-family: "Pirata One";
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.span {
+    color: var(--main-color);
+    text-shadow: 3px 3px 2px red;
+    margin-bottom: 30px;
+}
+
+.joinNowButton {
+    padding: 15px 30px;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    margin-left:90px;
+    box-shadow: 2px 3px 3px 2px red;
+    transition: 1.5s;
+    font-family: "Poppins";
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.joinNowButton:hover{
+    background-color: black;
+    color:var(--main-color)
+}
