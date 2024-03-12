@@ -1,0 +1,58 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 120px 0;
+    /* margin: 80px 0px; */
+}
+.card {
+    width: 100%;
+    max-width: 47%;
+    display: flex;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.img {
+    margin-right: 30px;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h4 {
+    color: white;
+}
+
+.p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.a {
+    color: #ed563b;
+    text-decoration: none;
+    transition: color 600ms ease-in-out;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.a:hover {
+    color: #f9735b;
+}
+.h2{
+    color: white;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.subTitle{
+    color: white;
+    font-size: 15px;
+    line-height: 1.7;
+}

@@ -20,10 +20,10 @@ export default function NavBar() {
             </li>
             <li>
               {" "}
-              <a href="#Plan" class={Style.link}>Plan</a>
+              <a href="#Program" class={Style.link}>Program</a>
             </li>
             <li>
-              <a href="#About" class={Style.link}>About</a>
+              <a href="#Coaches" class={Style.link}>Coaches</a>
             </li>
             <li>
               {" "}

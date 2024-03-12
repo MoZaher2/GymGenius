@@ -1,0 +1,26 @@
+.member {
+    width: 100%;
+    padding: 120px 0;
+    /* margin: 80px 0px; */
+    text-align: center;
+    background: url("../../public/gymOverlayBg.jpg") no-repeat center/cover;
+}
+
+.h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 1.3px;
+    line-height: 1;
+}
+
+.span {
+    color: #ed563b;
+}
+
+.p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 20px 0;
+}

@@ -1,0 +1,14 @@
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    background: #ed563b;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 14px;
+    transition: 700ms ease-in-out;
+}
+
+.btn:hover {
+    background: #f9735b;
+    color:#313030;
+}
