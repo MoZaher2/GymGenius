@@ -48,7 +48,7 @@ export default function SignUp() {
         setError(true);
         return;
       }
-      router.push("/login");
+      router.push("/Login");
     } catch (error) {
       Message = error.response.data;
       console.log(error.response.data);
@@ -149,7 +149,7 @@ export default function SignUp() {
 
           <div style={{ display: "flex" }}>
             <p className={Style.login}>Already have an account?</p>
-            <Link href="/login" passHref className={Style.signSpan}>
+            <Link href="/Login" passHref className={Style.signSpan}>
               <span>Sign in</span>
             </Link>
           </div>
