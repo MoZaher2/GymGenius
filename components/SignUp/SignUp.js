@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import api from "@/components/API/api";
 import Link from "next/link";
 let Message;
-export default function () {
+export default function SignUp() {
 
   
 
@@ -48,7 +48,7 @@ export default function () {
         setError(true);
         return;
       }
-      router.push("/Login");
+      router.push("/login");
     } catch (error) {
       Message = error.response.data;
       console.log(error.response.data);
@@ -149,7 +149,7 @@ export default function () {
 
           <div style={{ display: "flex" }}>
             <p className={Style.login}>Already have an account?</p>
-            <Link href="/Login" passHref className={Style.signSpan}>
+            <Link href="/login" passHref className={Style.signSpan}>
               <span>Sign in</span>
             </Link>
           </div>
