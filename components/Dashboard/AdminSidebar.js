@@ -19,9 +19,7 @@ export default function SideBar() {
   function handelLogOut(){
     localStorage.removeItem('Token');
   }
-  let userName = sessionStorage.getItem("Username");
-  let Email = sessionStorage.getItem("Email");
-    return (
+  return (
     <nav className="sidebar">
       <header>
         <div className="user">
@@ -33,8 +31,8 @@ export default function SideBar() {
       style={{borderRadius: "50%"}}
     />
           </i>
-          <h2>{ userName || "Guest"}</h2>
-          <p>{ Email || "guest@example.com"}</p>
+          <h2>{localStorage.getItem("Username") || "Guest"}</h2>
+          <p>{localStorage.getItem("Email") || "guest@example.com"}</p>
         </div>
         <i className="toggle">
         <BiChevronRight />

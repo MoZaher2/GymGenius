@@ -35,10 +35,9 @@ export default function Login() {
         return;
       }
 
-      sessionStorage.setItem("Token", response.data.Token);
-      // sessionStorage.getItem("Token");
-      sessionStorage.setItem("Username", response.data.Username);
-      sessionStorage.setItem("Email", response.data.Email);
+      localStorage.setItem("Token", response.data.Token);
+      localStorage.setItem("Username", response.data.Username);
+      localStorage.setItem("Email", response.data.Email);
 
       setDone(true);
       setTimeout(() => {
