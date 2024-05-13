@@ -6,14 +6,15 @@ import Logo from "../../public/logo.png";
 import { useRouter } from "next/navigation";
 import api from "@/components/API/api";
 import Link from "next/link";
+import Successful from "@/components/Successful/Successful";
+
 let Message;
 export default function SignUp() {
-
-  
 
   const router = useRouter();
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [done, setDone] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -48,7 +49,11 @@ export default function SignUp() {
         setError(true);
         return;
       }
-      router.push("/Login");
+      setDone(true);
+      setTimeout(() => {
+        setDone(false);
+        router.push("/Login");
+      }, 2500);
     } catch (error) {
       Message = error.response.data;
       console.log(error.response.data);
@@ -157,6 +162,7 @@ export default function SignUp() {
         <div className="loggo">
           <Image src={Logo} alt="Logo" width={530} height={530} />
         </div>
+      {done && <Successful />}
       </div>
       {error && <p className={Style.error}>{Message}</p>}
     </>

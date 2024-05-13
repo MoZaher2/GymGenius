@@ -71,11 +71,12 @@
 .socials {
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
 
 .i {
-    
+    width: 30px;
+    height: 30px;
     margin-right: 18px;
     transition: color 600ms ease-in-out;
     cursor: pointer;

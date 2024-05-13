@@ -60,9 +60,9 @@ const GymProgramCard = ({ title, desc }) => (
     <div class={Style.cardInfo}>
       <h4 class={Style.h4}>{title}</h4>
       <p class={Style.p}>{desc}</p>
-      <a class={Style.a} href="#/">
+      {/* <a class={Style.a} href="#/">
         DISCOVER MORE
-      </a>
+      </a> */}
     </div>
   </div>
 );

@@ -1,0 +1,11 @@
+.MuiDataGrid-footerContainer{
+    background: var(--second-color);
+    display: none !important;
+}
+.MuiDataGrid-cell{
+    text-align: center !important;
+}
+.MuiDataGrid-columnHeaderTitleContainer{
+    display: flex;
+    justify-content: center;
+}

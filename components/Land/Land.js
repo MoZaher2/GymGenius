@@ -8,7 +8,7 @@ export default function Land() {
           <p class={styles.prag}>Never give up</p>
           <p class={styles.prag}>You’re almost there...</p>
           <p class={styles.span}>Come Join Us!</p>
-          <a href="/Home" class={styles.joinNowButton}>
+          <a href="/Register" class={styles.joinNowButton}>
             Join Now
           </a>
         </div>

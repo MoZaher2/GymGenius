@@ -17,9 +17,9 @@
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px #853636;
     width: 500px;
-    height: 300px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -72,6 +72,19 @@
     font-size: 35px;
     color: #d9470e;
     text-shadow: 3px 3px 3px black;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
-  
+  .forget{
+    width:fit-content;
+    margin-right:10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    transition:0.5s;
+    position: absolute;
+    right:0;
+  }
+.forget:hover{
+  color:#dd6d5c;
+}

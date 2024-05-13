@@ -1,0 +1,40 @@
+/*  */
+.header{
+    width: 95%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--main-color);
+}
+.imgCont{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 6px;
+
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.bell{
+    color: var(--second-color);
+    font-size: 25px;
+    animation: bell 1s alternate-reverse ease-in-out infinite ;
+}
+@keyframes bell {
+    0%{
+        rotate: 22deg;
+    }
+    100%{
+        rotate: -22deg;
+    }
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+/*  */

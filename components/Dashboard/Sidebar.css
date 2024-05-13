@@ -1,0 +1,109 @@
+*{
+    /* font-family: 'Poppins', sans-serif; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --body-color:"#ece9e9";
+    --text-color:#FFF;
+    --main-color: #041831;
+    --second-color: #f69e7c;
+
+}
+body{
+    background-color: var(--body-color);
+    /* height: 100vh; */
+}
+.sidebar{
+    height: 100vh;
+    /* width: 240px; */
+    width: 330px;
+    background-color: var(--main-color);
+    padding: 10px 14px;
+}
+
+header .user{
+    text-align: center;
+}
+header .user h2{
+    margin-bottom: 10px;
+    color: var(--second-color);
+}
+/* header .user i{
+    font-size: 50px;
+    color:var(--text-color);
+} */
+header .user p{
+color:var(--text-color);
+}
+
+.sidebar header{
+    position: relative;
+    border-bottom: 1px solid var(--second-color);
+    padding-bottom: 10px;
+}
+.sidebar header .toggle{
+    position: absolute;
+    top: 30%;
+    right: -40px;
+    transform: translate(-50%);
+    height: 25px;
+    width: 25px;
+    background-color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: 22px;
+}
+.sidebar li{
+    height: 49px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    transition: 0.4s;
+}
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+
+.sidebar li a{
+    height:100%;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.5s, font-weight 0.5s;
+}
+.sidebar li a:hover{
+    background-color: var(--second-color);
+    font-size: 16px;
+}
+
+.sidebar .redhover a:hover{
+    background-color: red;
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+color: var(--main-color);
+}
+
+.sidebar .menu-bar{
+    height: calc(100% - 123px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -5,7 +5,7 @@ import Style from "./Contact.module.css"
 export default function Contact() {
   return (
     <>
-      <h2 class={Style.h2}>
+      <h2 class={Style.h2} id="ContactUs">
         Contact <span class={Style.h2span}>Us</span>
       </h2>
       <div
