@@ -1,5 +1,6 @@
 "use client";
 import "./Sidebar.css";
+import React, { useState, useEffect } from "react";
 import {
   BiUserCircle,
   BiGrid,
@@ -16,9 +17,28 @@ import Image from "next/image";
 import AdminAvatar from "../../public/avatar.jpg";
 
 export default function SideBar() {
+
+  const [userName, setUserName] = useState("Guest");
+  const [email, setEmail] = useState("guest@example.com");
+
+  useEffect(() => {
+    // Check if window is defined (client-side) before accessing sessionStorage
+    if (typeof window !== 'undefined') {
+      const storedUserName = sessionStorage.getItem("Username");
+      const storedEmail = sessionStorage.getItem("Email");
+      if (storedUserName) {
+        setUserName(storedUserName);
+      }
+      if (storedEmail) {
+        setEmail(storedEmail);
+      }
+    }
+  }, []);
+
   function handelLogOut(){
     localStorage.removeItem('Token');
   }
+
   return (
     <nav className="sidebar">
       <header>
@@ -31,8 +51,10 @@ export default function SideBar() {
       style={{borderRadius: "50%"}}
     />
           </i>
-          <h2>{localStorage.getItem("Username") || "Guest"}</h2>
-          <p>{localStorage.getItem("Email") || "guest@example.com"}</p>
+          <h2>{userName}</h2>
+          <p>{email}</p>
+          {/* <h2>{localStorage.getItem("Username") || "Guest"}</h2>
+          <p>{localStorage.getItem("Email") || "guest@example.com"}</p> */}
         </div>
         <i className="toggle">
         <BiChevronRight />
